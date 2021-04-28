@@ -1,0 +1,61 @@
+body{
+	margin: 0px;
+	background: #394246;
+}
+.gallery{
+	width: 700px;
+	margin: 20px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.slide-wrap{
+	margin: 0px;
+	padding: 0px;
+	width: 500px;
+	height: 350px;
+	border: 3px solid #161b1d;
+	position: relative;
+	box-shadow: 1px 1px 8px 9px #386479; 
+}
+.gallery button{
+	width: 50px;
+	height: 50px;
+	background: #b6cad4;
+	border-radius: 7px;
+	font-size: 30px;
+	color: #31373a;
+	cursor: pointer;
+}
+.gallery button:hover{
+	background: rgb(56 100 121);
+	color: #000;
+}
+.slide{
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+	transition: opacity 1s;
+}
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+.miniatures{
+	width:700px;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+.miniatures img{
+	display: block;
+	width: 50px;
+	height: 35px;
+	cursor: pointer;
+	transition: transform .2s;
+}
+.miniatures img:hover{
+	transform: scale(2);
+}
